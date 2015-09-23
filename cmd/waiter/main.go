@@ -23,7 +23,10 @@ func main() {
 		second_str := c.DefaultQuery("seconds", "1")
 		seconds, _ := strconv.Atoi(second_str)
 		time.Sleep(time.Duration(seconds) * time.Second)
-		c.String(http.StatusOK, "Done")
+
+		c.JSON(200, gin.H{
+			"status": "ok",
+		})
 	})
 
 	router.Run(":" + port)
