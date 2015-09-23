@@ -1,0 +1,12 @@
+{
+  "name": "waiter",
+  "description": "Simple waiter http endpoint",
+  "keywords": [
+    "go",
+    "waiter",
+  ],
+  "image": "heroku/go:1.5",
+  "mount_dir": "src/github.com/waiter",
+  "website": "http://github.com/mawaldner-redfall/waiter",
+  "repository": "http://github.com/mwaldenr-redfall/waiter"
+}
