@@ -24,7 +24,7 @@ func main() {
 		seconds, _ := strconv.Atoi(second_str)
 		time.Sleep(time.Duration(seconds) * time.Second)
 
-		c.JSON(200, gin.H{
+		c.JSON(http.StatusOK, gin.H{
 			"status": "ok",
 		})
 	})
