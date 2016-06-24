@@ -3,11 +3,15 @@
 "A person who waits for a time, event, or opportunity."
 
 A simple http endpoint that sleeps for a certain amount of time. Mainly
-used in webhook testing. 
+used in webhook testing.
 
-If you somehow manage to build this go project:
+To build:
 
-PORT=3000 ./main
+    go build cmd/waiter/main.go
 
-curl -X POST https://localhost:3000/wait   -> wait 1 second  
-curl -X POST https://localhost:3000/wait?seconds=5   -> wait 5 second  
+Then:
+
+    PORT=3000 ./main
+
+    curl -X POST https://localhost:3000/wait   -> wait 1 second
+    curl -X POST https://localhost:3000/wait?seconds=5   -> wait 5 second
